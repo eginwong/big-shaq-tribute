@@ -1,10 +1,14 @@
 @import url(https://necolas.github.io/normalize.css/latest/normalize.css);
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-image: url("https://digitaladdictsblog.com/wp-content/uploads/2019/01/shutterstock_295846730.jpg") ;
   background-size: cover;
   color: white;
-  height: 100%;
 }
 
 * {
@@ -18,8 +22,8 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
   justify-items: center;
-  min-height: 100%;
 }
 
 .header {
@@ -34,34 +38,38 @@ a {
 
 .shaq-avatar {
   background-image: url("../assets/715L3zQ8NoL.png");
-  cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
 .shaq-avatar:hover {
   background-image: url("../assets/715L3zQ8NoL-with-mouth.png");
-  cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
   height: 100%;
   width: 110%;
 }
 
+.statistics { 
+  padding-bottom: 50px;
+}
+
 /* Accessibility links */
 .sr-only {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
   height: 1px;
-  padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .content-section--header {
@@ -77,6 +85,8 @@ a {
   height: 50px;
   justify-content: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer--icon {
