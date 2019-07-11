@@ -41,3 +41,5 @@
   - the port is dynamically set by heroku and if you do not honour the port, your app will fail with an `H10` error.
 - asynchronously loading modules is a little more involved than it seems at first.
   - [ref](https://stackoverflow.com/questions/34962075/how-to-async-require-in-nodejs)
+- next-gen image formats like jp2 (JPEG 2000), jpeg xr, webp.
+  - they're not supported in all browsers as of yet!
