@@ -1,0 +1,90 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+body {
+  background-image: url("https://digitaladdictsblog.com/wp-content/uploads/2019/01/shutterstock_295846730.jpg") ;
+  background-size: cover;
+  color: white;
+  height: 100%;
+}
+
+* {
+  font-family: "Comic Sans Ms";
+}
+
+a {
+  color: hotpink;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-height: 100%;
+}
+
+.header {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.soundboard-section {
+  width: 100%;
+  height: 100%;
+}
+
+.shaq-avatar {
+  background-image: url(assets/715L3zQ8NoL.png);
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.shaq-avatar:hover {
+  background-image: url(assets/715L3zQ8NoL-with-mouth.png);
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 110%;
+}
+
+/* Accessibility links */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.content-section--header {
+  cursor: pointer;
+}
+
+.footer {
+  align-items: center;
+  background: black; 
+  display: flex;
+  font-family: "Roboto";
+  font-size: 14px;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer--icon {
+  font-size: 25px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: block;
+  }
+}
