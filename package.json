@@ -4,7 +4,8 @@
   "description": "## Objective - fun demo project - create a soundboard of my favourite man's not hot lines - include links on big shaq's man's not hot song - play with node",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
