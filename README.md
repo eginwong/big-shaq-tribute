@@ -4,7 +4,7 @@
 - fun demo project
 - create a soundboard of my favourite man's not hot lines
 - include links on big shaq's man's not hot song
-- play with node and react
+- play with node
 
 ## Technology used
 - `ffmpeg`
