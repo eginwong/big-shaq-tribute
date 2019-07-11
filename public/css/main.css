@@ -33,7 +33,7 @@ a {
 }
 
 .shaq-avatar {
-  background-image: url(assets/715L3zQ8NoL.png);
+  background-image: url("../assets/715L3zQ8NoL.png");
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ a {
 }
 
 .shaq-avatar:hover {
-  background-image: url(assets/715L3zQ8NoL-with-mouth.png);
+  background-image: url("../assets/715L3zQ8NoL-with-mouth.png");
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;

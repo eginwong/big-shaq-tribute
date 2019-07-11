@@ -30,3 +30,10 @@
 - find ideal program to split song into tracks
   - `ffmpeg`, via `homebrew`
     - `ffmpeg -i Big-Shaq-Mans-Not-Hot.mp3 -ss 16 -to 19 -c copy quick-maths.mp3`
+
+## TIL
+- you can send URLs as the direct input of an `Audio` object in js.
+- caching will occur as part of the responsibility of the browser. There's not much you can control for here.   
+  - I tried to send `Cache-Control: no-cache` that was not respected.
+  - I then sent a query param that would always be unique, which is called the cache-busting technique
+  - [src](https://stackoverflow.com/questions/25821915/how-to-force-the-html5-audio-tag-to-reload-a-changing-file)
