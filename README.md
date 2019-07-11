@@ -34,6 +34,10 @@
 ## TIL
 - you can send URLs as the direct input of an `Audio` object in js.
 - caching will occur as part of the responsibility of the browser. There's not much you can control for here.   
-  - I tried to send `Cache-Control: no-cache` that was not respected.
-  - I then sent a query param that would always be unique, which is called the cache-busting technique
-  - [src](https://stackoverflow.com/questions/25821915/how-to-force-the-html5-audio-tag-to-reload-a-changing-file)
+  - tried to send `Cache-Control: no-cache` that was not respected.
+  - then sent a query param that would always be unique, which is called the cache-busting technique.
+    - [src](https://stackoverflow.com/questions/25821915/how-to-force-the-html5-audio-tag-to-reload-a-changing-file)
+- for heroku deployment, you need to use the `process.env.port` to pick up the environment variable for the port.
+  - the port is dynamically set by heroku and if you do not honour the port, your app will fail with an `H10` error.
+- asynchronously loading modules is a little more involved than it seems at first.
+  - [ref](https://stackoverflow.com/questions/34962075/how-to-async-require-in-nodejs)

@@ -5,7 +5,10 @@ const app = express();
 app.use(express.static("./public"));
 
 // initialization of cache
-let songCache = cache;
+let songCache = null;
+cache.then(x => {
+  songCache = x;
+});
 
 app.get("/api/sound", (req, res) => {
   // https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
