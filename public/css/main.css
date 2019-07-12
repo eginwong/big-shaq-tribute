@@ -97,4 +97,8 @@ a {
   .grid-container {
     display: block;
   }
+
+  .content-section {
+    margin: 20px;
+  }
 }
